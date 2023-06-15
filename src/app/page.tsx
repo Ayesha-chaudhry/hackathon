@@ -1,26 +1,28 @@
 import BASE_PATH_FORAPI from '@/components/shared/BasePath'
 import Hero from '@/components/widgets/Hero'
 import Newsletter from '@/components/widgets/Newsletter'
+import ProductCarousel from '@/components/widgets/Product Carousel'
 import Promotion from '@/components/widgets/Promotion'
 import Unique from '@/components/widgets/Unique'
 import Image from 'next/image'
 
-async function getProductsData(){
-  const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
+export const getPoductsData = async() => {
+  // const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
 
-  if(!res.ok){
-    throw new Error("Failed to fetch")
-  }
-  return res.json();
+  // if(!res.ok){
+  //   throw new Error("Failed to fetch")
+  // }
+  // return res.json();
+  return {response: "Hi"}
 }
 
 export default async function Home() {
-  const response = await getProductsData()
-  console.log("res :", response)
+  const {response} = await getPoductsData();
   return (
   <>
   <Hero/>
   <Promotion/>
+  <ProductCarousel ProductData={response}/>
   <Unique/>
   <Newsletter/>
   </>

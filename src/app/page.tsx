@@ -6,14 +6,13 @@ import Promotion from '@/components/widgets/Promotion'
 import Unique from '@/components/widgets/Unique'
 import Image from 'next/image'
 
-export const getPoductsData = async() => {
-  // const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
+const getPoductsData = async() => {
+  const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
 
-  // if(!res.ok){
-  //   throw new Error("Failed to fetch")
-  // }
-  // return res.json();
-  return {response: "Hi"}
+  if(!res.ok){
+    throw new Error("Failed to fetch")
+  }
+  return res.json();
 }
 
 export default async function Home() {

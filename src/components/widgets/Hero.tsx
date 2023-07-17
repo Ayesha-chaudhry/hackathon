@@ -8,7 +8,7 @@ import Featured4_img from "../../assets/Images/Featured4.webp";
 
 const Hero = () => {
   return (
-    <div className="md:flex justify-between mx-6 md:mx-32">
+    <div className="md:flex justify-between">
       {/* Left side */}
       <div className="mt-16 md:mt-32 max-w-lg">
         <span className="bg-[#e1edff] text-[#571eff] font-bold px-6 py-3 rounded-md ">Sale 70%</span>
@@ -22,7 +22,7 @@ const Hero = () => {
           <span >Start Shopping</span>
         </button>
         {/* Brands */}
-        <div className="flex justify-between mt-16 md:mt-28">
+        <div className="flex md:justify-between mt-16 md:mt-28">
         <Image src={Featured1_img} alt="Featured"/>
         <Image src={Featured2_img} alt="Featured"/>
         <Image src={Featured3_img} alt="Featured"/>

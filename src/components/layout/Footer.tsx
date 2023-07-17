@@ -6,7 +6,7 @@ import { GrFacebookOption } from "react-icons/gr";
 const Footer = () => {
   return (
     <>
-      <section className="mx-6 md:mx-32 mt-40">
+      <section className="mt-40">
         <div className="grid md:grid-cols-5 ">
           {/* Logo */}
           <div className="md:col-span-2">

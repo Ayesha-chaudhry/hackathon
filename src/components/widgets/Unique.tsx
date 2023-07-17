@@ -3,7 +3,7 @@ import shrt from "../../assets/Images/feature.webp";
 
 const Unique = () => {
   return (
-    <section className="mx-6 md:mx-32 mt-40">
+    <section className="mt-40">
       <h1 className="flex justify-center md:justify-end font-bold text-4xl md:text-5xl md:mr-[40]">
         Unique and Authentic
         <br /> Vintage Designer Jewellery

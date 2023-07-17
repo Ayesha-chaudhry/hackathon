@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <section className="mx-6 md:mx-32 mt-40 text-center relative">
+    <section className="mt-40 text-center relative">
       <div>
         <h1 className="text-2xl md:text-4xl font-bold mb-4 mt-4">
           Subscribe Our Newsletter

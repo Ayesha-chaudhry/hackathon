@@ -4,7 +4,7 @@ import event3_img from "../../assets/Images/event3.webp";
 import Image from "next/image";
 const Promotion = () => {
   return (
-    <div className="mx-6 md:mx-32 mt-28">
+    <div className="mt-28">
       <h2 className="text-[#3964f5] mb-4 font-bold text-center">PROMOTIONS</h2>
       <h1 className="text-xl md:text-4xl font-bold text-center">Our Promotions Events</h1>
       {/* Left Side */}
